@@ -10,11 +10,8 @@ SERVER = os.getenv('DISCORD_GUILD')
 
 client = discord.Client()
 
-@client.event
-async def on_ready():
-    guild = client.guilds[0]
-    channel = guild.text_channels[2]
-    await channel.send('At your command')
+#@client.event
+#async def on_ready():
 
 
 @client.event
